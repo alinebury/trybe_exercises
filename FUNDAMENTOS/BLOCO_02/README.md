@@ -1,4 +1,5 @@
 #BLOCO 2 
+
 Esse bloco pertence ao módulo de Fundamentos de Desenvolvimento Web do curso da [Trybe](https://www.betrybe.com/).
 
 -GIT & GITHUB 

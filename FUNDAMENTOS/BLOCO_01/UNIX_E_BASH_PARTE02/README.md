@@ -1,6 +1,6 @@
 #DESCRIÇÃO DOS PROGRAMAS
-(PARTE 1)
 
+(PARTE 1)
 *Comandos de Input e Output
 
 2. Criar arquivo de texto skills2.txt e adicione os valores Internet, Unix e Bash.
