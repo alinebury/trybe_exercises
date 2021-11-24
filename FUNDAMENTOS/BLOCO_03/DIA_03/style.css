@@ -1,0 +1,177 @@
+/* ---------------------- PARTE 1 --------------------------*/
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+}
+  
+.width-and-height {
+    height: 50px;
+    width: 50px;
+}
+  
+  /* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+div.padding {
+  padding: 20px;
+}
+  
+  /* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+div.margin {
+  margin: 30px;
+}
+  
+  /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+div.border {
+  border: 5px solid black;   
+}
+
+/* ---------------------- PARTE 2 --------------------------*/
+
+.super-mario {
+  width: 200px;
+  position: absolute;
+  left: 10%;
+}
+
+.goomba {
+  width: 100px;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+
+.baloon {
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  z-index: 1;
+
+}
+
+.speach {
+  font-size: 25px;
+  position: absolute;
+  left: 32%;
+  top: 40%;
+  z-index: 3;
+}
+
+.bowser {
+  width: 200px;
+  position: absolute;
+  left: 58%;
+  top: 55%;
+  z-index: 2;
+}
+
+/* ---------------------- PARTE 3 --------------------------*/
+
+#parte3{
+  position:absolute;
+  top: 90%;
+}
+
+.cent{
+  text-align: center;
+}
+
+.cursor:hover{
+  background-color: aquamarine;
+}
+
+.cursor:active{
+  color: red;
+}
+
+.cursor{
+  list-style: none;
+}
+
+.cursor2:hover{
+  border-style: solid;
+  border-color: indigo;
+}
+
+#c1{
+  color: red;
+}
+#c2{
+  color: green;
+}
+#c3{
+  color: yellow;
+  font-size: x-large;
+}
+#c4{
+  color: brown;
+}
+#c5{
+  color: lightpink;
+}
+
+.impar{
+  font-style: italic;
+}
+  
+
+/* ---------------------- PARTE 4 --------------------------*/
+
+#parte4{
+  position: absolute;
+  top: 190%;
+}
+
+#cor{
+  background-color: yellow;
+}
+
+.par{
+  color: green;
+}
+.imp{
+  text-transform: uppercase;
+}
+
+.font{
+  color: red;
+}
+
+
+#it:hover{
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 1px;
+}
+.tam{
+  font-size: 20px;
+}
+
+#neg{
+  font-weight: bolder;
+}
+
+.azul{
+  color: blue;
+}
+#rosa{
+  background-color: pink;
+}
+
+#bolder{
+  font-weight: bolder;
+}
+.green:hover{
+  color: green;
+}
+#orange{
+  color: orangered;
+}
+#black{
+  color: black;
+}
+#yellow{
+  color: yellow;
+}
