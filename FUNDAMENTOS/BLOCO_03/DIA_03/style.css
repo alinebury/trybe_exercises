@@ -38,7 +38,7 @@ div.border {
 .goomba {
   width: 100px;
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 15%;
 }
 
@@ -70,7 +70,7 @@ div.border {
 
 #parte3{
   position:absolute;
-  top: 90%;
+  top: 100%;
 }
 
 .cent{
@@ -120,7 +120,7 @@ div.border {
 
 #parte4{
   position: absolute;
-  top: 190%;
+  top: 200%;
 }
 
 #cor{
