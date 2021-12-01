@@ -5,6 +5,6 @@ let info = {
     recorrent: "Sim",
 };
 
-for (key in info) {
+for (let key in info) {
     console.log(key);
 }
