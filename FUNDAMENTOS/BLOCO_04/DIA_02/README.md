@@ -20,3 +20,9 @@
 7. Menor valor no array.
 8. Crie um array que vá de 1 até 25.
 9. Utilizando array do exercício 8, mostre divisão dos elementos por 2.
+
+##### BÔNUS.
+
+1. Ordene o array em ordem crescente.
+2. Ordene o array em ordem decrescente.
+3. Crie um array a partir do array 'numbers'(sem perdê-lo), e o valor do novo array deverá ser igual ao valor correspondente no array 'numbers' multiplcado pelo seguinte.
