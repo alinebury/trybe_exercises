@@ -1,8 +1,8 @@
-#####Parte 1.
+##### Parte 1.
 
 -Implementação das propriedades CSS e adições à estrutura HTML existente.
 
-#####Parte 2.
+##### Parte 2.
 
 1. Adicone um cabeçalho
 2. Adicione links:
