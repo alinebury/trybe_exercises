@@ -19,7 +19,7 @@
 8. Faça a terceira 'div' maior que as demais.
 9. Deixe as tags ímpares 'h3' com o texto em itálico.
 
-## Parte 4 - COnbinações e Classes Descendentes.
+## Parte 4 - Combinações e Classes Descendentes.
 
 1. Mudar cor dos itens de listas ordenadas.
 2. Tags Header(h1, h2 ...) cor vermelha e aumente seu tamanho se estiver em itálico.
