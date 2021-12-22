@@ -1,6 +1,6 @@
 ##### Parte 1.
 
--Implementação das propriedades CSS e adições à estrutura HTML existente.
+1. Implementação das propriedades CSS e adições à estrutura HTML existente.
 
 ##### Parte 2.
 
