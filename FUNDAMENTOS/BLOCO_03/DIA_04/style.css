@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(187, 184, 184);
+}
+
+h1{
+    text-align: center;
+    background-color: gray;
+    padding: 2%;
+}
+
+nav{
+    display: inline;
+}
+
+ul{
+    list-style: square;
+}
+
+table{
+    border: 5px solid rebeccapurple;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+section{
+    clear: both;
+}
