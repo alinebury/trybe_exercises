@@ -8,5 +8,4 @@ for(let i=0 ; i<numbers.length ; i++){
         newArray.push(numbers[i] * 2);
     }
 }
-
 console.log(newArray);
