@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Exercício 5.2</title>
+
+        <style>
+            section {
+                border-color: black;
+                border-style: solid;
+            }
+
+            .title {
+                text-align: center;
+            }
+
+            .main-content {
+                background-color: yellow;
+            }
+
+            .main-content .center-content {
+                background-color: red;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .main-content .center-content p {
+                font-style: italic;
+            }
+
+            .main-content .left-content {
+                background-color: green;
+                width: 60%;
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            .main-content .left-content .small-image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 100%;
+            }
+
+            .main-content .right-content {
+                background-color: blue;
+                width: 60%;
+                margin-left: auto;
+                margin-right: 0;
+            }
+
+            .main-content .description {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            /* ----------------------------- PARTE 1 ----------------------------- */
+            const elementH1 = document.createElement("h1");
+            elementH1.innerText = "Exercício 5.2 - JavaScript DOM";
+            document.body.appendChild(elementH1);
+
+            const elementMain = document.createElement("main");
+            elementMain.className = "main-content";
+            document.body.appendChild(elementMain);
+
+            const filhoMain = document.createElement("section");
+            filhoMain.className = "center-content";
+            elementMain.appendChild(filhoMain);
+
+            const paragraph = document.createElement("p");
+            filhoMain.appendChild(paragraph);
+
+            const sectionLeft = document.createElement("section");
+            sectionLeft.className = "left-content";
+            elementMain.appendChild(sectionLeft);
+
+            const sectionRight = document.createElement("section");
+            sectionRight.className = "right-content";
+            elementMain.appendChild(sectionRight);
+
+            const imagem = document.createElement("img");
+            imagem.className = "small-image";
+            imagem.src = "https://picsum.photos/200";
+            sectionLeft.appendChild(imagem);
+
+            const list = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+            const elementList = document.createElement("ul");
+            sectionRight.appendChild(elementList);
+            for(let num in list){
+                const elementLi = document.createElement("li")
+                elementLi.innerText = list[num];
+                elementList.appendChild(elementLi);
+            }
+
+            for(let i=0 ; i<3 ; i++){
+                const elementH3 = document.createElement("h3");
+                elementH3.innerText = i;
+                elementMain.appendChild(elementH3);
+            }
+
+            /* ----------------------------- PARTE 2 ----------------------------- */
+
+            const title = document.querySelector("h1");
+            title.className = "title";
+
+            const description = document.getElementsByTagName("h3");
+            for(let i=0 ; i<3 ; i++){
+                description[i].className = "description"
+            }
+            
+            const removeSectionL = document.getElementsByClassName("left-content")[0];
+            elementMain.removeChild(removeSectionL);
+
+            const sectionR = document.getElementsByClassName("right-content")[0];
+            sectionR.style.marginRight = "auto";
+
+            const center = document.getElementsByClassName("center-content")[0];
+            center.parentNode.style.backgroundColor = "green";
+
+            elementList.lastChild.remove();
+            elementList.lastChild.remove();
+
+
+        
+
+        </script>
+    </body>
+</html>

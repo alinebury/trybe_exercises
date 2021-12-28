@@ -16,3 +16,7 @@
 
 ##### PARTE 3 - Removendo elementos.
 1. Remova todos os elementos filhos de 'paiDoPai' exceto 'pai', 'elementoOndeVoceEsta' e 'primeiroFilhoDoFilho'.
+
+##### Exercícios.
+1. Adicionando tags. 
+2. Remoções e alterações.
