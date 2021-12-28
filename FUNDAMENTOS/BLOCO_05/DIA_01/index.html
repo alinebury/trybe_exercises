@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Exercício 5.1</title>
+        
+        <style>
+        main, section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <header> 
+            <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+        </header>    
+
+        <main class="main-content">
+            <section class="center-content">
+                <p>Texto padrão do nosso site</p>
+                <p>-----</p>
+                <p>Trybe</p>
+            </section>
+        </main>
+
+        <script>
+            function changeText(){
+                const paraghaph = document.getElementsByTagName("p")[1];
+                paraghaph.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+            changeText();
+
+            function changeColor(){
+                const mainContent = document.getElementsByClassName("main-content")[0];
+                mainContent.style.backgroundColor = "rgb(76,164,109)";
+            }
+            changeColor();
+
+            function changeSquare(){
+                const centerContent = document.querySelector(".center-content");
+                centerContent.style.backgroundColor = "white";
+            }
+            changeSquare();
+
+            function correctTitle(){
+                const title = document.getElementsByTagName("h1")[0];
+                title.innerText = "Exercício 5.1 - JavaScript"
+            }
+            correctTitle();
+
+            function upperCase(){
+                const letters = document.querySelectorAll("p")[0];
+                letters.innerHTML = letters.innerHTML.toUpperCase();
+            }
+            upperCase();
+
+            function showConsole(){
+                const paraghaphs = document.getElementsByTagName("p");
+                for(let i=0 ; i<paraghaphs.length ; i++){
+                    console.log(paraghaphs[i].innerHTML);
+                }
+            }
+            showConsole();
+        </script>
+        
+    </body>
+</html>
