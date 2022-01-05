@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Currículo</title>
+    </head>
+
+    <body>
+        <fieldset>
+            <form action="" method="get">
+                <div>
+                    <label for="name">Nome Completo</label>
+                    <input type="text" maxlength="40" required id="name" name="name" value="">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" maxlength="50" required id="email" name="email" value="email">
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" maxlength="11" required id="cpf" name="cpf" value="cpf">
+                </div>
+                <br>
+                <div>                    
+                    <label for="address">Endereço</label>
+                    <input type="text" maxlength="200" required id="address" name="address" value="address">
+                </div>
+                <div>                  
+                    <label for="city">Cidade</label>
+                    <input type="text" maxlength="28" required id="city" name="city" value="city">
+                </div>
+                <div>                   
+                    <label for="state">Estado</label>
+                    <select required id="state" name="state">
+                    </select>
+                </div>
+                <div>                   
+                    <label for="typeHouse">Tipo do imóvel</label>
+                    <input type="radio" name="typeHouse" id="house" value="house" required>Casa
+                    <input type="radio" name="typeHouse" id="apartament" value="apartament" required>Apartamento              
+                </div>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <form action="" method="get">
+                <div>
+                    <label for="resumo">Resumo do Currículo</label>
+                    <textarea name="resumo" id="resumo" maxlength="1000" required></textarea>
+                </div>
+                <div>
+                    <label for="cargo">Cargo</label>
+                    <input type="text" name="cargo" maxlength="40" id="cargo" value="cargo" required>
+                </div>
+                <div>
+                    <label for="description">Descrição do Cargo</label>
+                    <input type="text" name="description" maxlength="500" id="description" value="description" required>
+                </div>
+                <div>
+                    <label for="date">Data de início</label>
+                    <input type="text" id="date" name="date" value="" required>
+                </div>
+            </form>
+        </fieldset>
+
+        <script src="formScript.js"></script>
+    </body>
+</html>
