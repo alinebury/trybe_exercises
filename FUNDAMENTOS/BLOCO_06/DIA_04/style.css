@@ -6,11 +6,11 @@
 }
 
 body {
-    background-color: rgb(247, 247, 247);
+    background-color: #176963
 }
 
 .header-container {
-    background-color: #5C687C;
+    background-color: #1A1E26;
     display: flex;
 }
 
@@ -26,6 +26,7 @@ body {
     flex-basis: 500px;
     order: 2;
     flex-grow: 1;
+    ;
 }
 
 .menu-container ul {
@@ -36,7 +37,7 @@ body {
 }
 
 .menu-container li {
-    color: white;
+    color: #269B88;
     font-weight: 500;
     font-size: 1.3rem;
     list-style: none;
@@ -58,6 +59,7 @@ body {
 .movie-container h2 {
     margin: 40px 0;
     text-align: center;
+    color: #1A1E26;
 }
 
 .card-container {
@@ -68,7 +70,6 @@ body {
 
 .card-container div {
     align-items: center;
-    background-color: #5C687C;
     border: black solid 1px;
     display: flex;
     height: 150px;
@@ -90,9 +91,19 @@ body {
 h4 {
     margin-bottom: 10px;
     text-align: center;
+    color: #1A1E26
 }
 
 .aside-container p {
     margin: 10px 0;
     text-align: justify;
+}
+
+.image {
+    width: 150px;
+    border: #269B88 solid 3px;
+}
+
+.image:hover {
+    width: 200px;
 }

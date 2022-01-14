@@ -1,0 +1,13 @@
+form {
+    background-color: grey;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: flex-end;
+}

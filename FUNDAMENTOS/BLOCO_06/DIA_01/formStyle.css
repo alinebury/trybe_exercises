@@ -1,0 +1,24 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.personal-data {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding: 20px;
+}
+
+.name,
+.email,
+.cpf,
+.address,
+.city,
+.state,
+.type-house {
+    padding: 2px;
+}

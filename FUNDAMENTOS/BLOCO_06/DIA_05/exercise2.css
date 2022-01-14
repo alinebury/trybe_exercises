@@ -7,3 +7,36 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+@media (max-width: 400px) {
+    body {
+        margin-left: 10px;
+        font-size: 25px;
+        background-color: plum
+    }
+    h2,
+    h1 {
+        font-size: 25px;
+    }
+    aside ul {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 401px) and (max-width: 900px) {
+    body {
+        background-color: steelblue;
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    body {
+        background-color: lightgreen;
+        margin: 10px;
+    }
+    .container {
+        flex-wrap: nowrap;
+    }
+}

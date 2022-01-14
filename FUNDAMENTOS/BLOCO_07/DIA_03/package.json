@@ -1,0 +1,15 @@
+{
+  "name": "dia_03",
+  "version": "1.0.0",
+  "description": "primeiros passos em Jest",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}

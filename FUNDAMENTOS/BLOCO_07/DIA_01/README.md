@@ -5,4 +5,5 @@
 2. Faça com que a função retorne  o array em ordem crescente.
     - Utilize 'template literals'.
     - Fazendo o mesmo exercício utilizando o método array.sort().
-    
+
+##### Parte 2.

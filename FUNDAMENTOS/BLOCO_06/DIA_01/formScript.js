@@ -12,3 +12,11 @@ function createStates(states){
     }
 }
 createStates(states);
+
+function charCount(valor){
+    const quant = 500;
+    const total = valor.length;
+    const resto = quant - total;
+
+    document.getElementById("textcount").innerText = resto;
+}
