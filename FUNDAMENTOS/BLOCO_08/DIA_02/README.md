@@ -12,3 +12,12 @@
 
 ##### sort.
   - Utilize a sort para ordenar o array pela idade das pessoas em ordem crescente e depois decrescente.
+
+##### Exercícios.
+  - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
+  - Retorne o nome do livro de menor nome.
+  - Encontre o primeiro livro cujo nome possui 26 caracteres.
+  - Ordene os livros por data de lançamento em ordem decrescente.
+  - Faça uma função que retorne true ou false, se todas as pessoas autoras nasceram no século XX.
+  - Faça uma função que retorne true ou false, se algum livro foi lançado na década de 80.
+  - Faça uma função que retorne true ou false, caso nenhum author tenha nascido no mesmo ano.

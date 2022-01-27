@@ -6,8 +6,8 @@ const people = [
   { name: 'Bruna', age: 19 },
 ];
 
-people.sort((a, b) => b.age - a.age); //crescente
+people.sort((a, b) => b.age - a.age); //decrescente
 console.log(people);
 
-people.sort((a, b) => a.age - b.age); //decrescente
+people.sort((a, b) => a.age - b.age); //crescente 
 console.log(people);
