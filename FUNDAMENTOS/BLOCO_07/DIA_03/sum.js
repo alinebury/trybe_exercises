@@ -5,5 +5,5 @@ function sum(a, b) {
 
   return a + b;
 }
-
+console.log(typeof sum);
 module.exports = sum;
