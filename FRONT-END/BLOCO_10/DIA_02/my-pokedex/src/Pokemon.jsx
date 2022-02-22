@@ -5,7 +5,7 @@ class Pokemon extends React.Component {
   render() {
     const { pokemon: { name, type, averageWeight, image } } = this.props;
     return (
-      <div>
+      <div className="pokemon">
         <div>
           <p>{name}</p>
           <p>{type}</p>
