@@ -16,12 +16,13 @@ class Pokedex extends React.Component {
 
   handlePokemon(event){
     const evento = event.target.innerText
-    evento !== 'All' ? this.setState({type: evento}) : this.setState({type: ''})
+    evento !== 'All' ? this.setState({type: evento}) : this.setState({type: '', position: 0})
   }
 
   handleNext(){
     const { position } = this.state
-    const tam = pokemons.length - 1
+    const { type } = this.state
+    const tam = pokemons.filter((pokemon) => pokemon.type.includes(type)).length - 1
  
     position === tam ? this.setState({position: 0}) : this.setState((previus) => ({
       position: previus.position + 1
