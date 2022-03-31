@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redux basic example</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  </head>
+  <body>
+    <div>
+      Contador: <span id="value">0</span>
+      <button id="increment">+</button>
+      <button id="decrement">-</button>
+      <br>
+      <!-- Faça um campo que recebe um valor e esse será o valor aplicado ao botão incremento. -->
+      <input type="number" id="add"> Adicionar
+      <br>
+      <!-- Faça um campo que recebe um valor e esse será o valor aplicado ao botão decremento -->
+      <input type="number" id="remove"> Remover
+      <br>
+      <!-- Armazene um outro valor no state , chamado clickCount . Este campo vai contar o número de vezes que qualquer botão na tela foi clicado -->
+      Botões clicado <span id="count">0</span> vezes
+      <br>
+      <!-- Armazene um array no state que guarda o valor individual que foi adicionado a cada click em qualquer um dos três botões. -->
+      Valores: <span id="clickValues">X</span>
+    </div>
+    <script>
+      const INCREMENT = 'INCREMENT';
+      const DECREMENT = 'DECREMENT';
+      const ADD_VALUE = 'ADD_VALUE';
+      const REMOVE_VALUE = 'REMOVE_VALUE';
+      const INITIAL_STATE = {
+        contador: 0,
+        clickCount: 0,
+        clickValues: [],
+      }
+
+      function changeState(state, action) {
+        const valor = action.type === 'INCREMENT' ? state.incrementValue : state.decrementValue;
+        console.log(valor)
+        return {
+          ...state,
+          contador: state.contador + valor,
+        }
+      }
+
+      const counterReducer = (state = INITIAL_STATE, action) => {
+        switch (action.type) {
+          case INCREMENT:
+            return {
+              ...state,
+              contador: state.contador + 1,
+              clickCount: state.clickCount + 1,
+              clickValues: [...state.clickValues, 1],
+            }
+          case DECREMENT:
+            return {
+              ...state,
+              contador: state.contador - 1,
+              clickCount: state.clickCount + 1,
+              clickValues: [...state.clickValues, -1],
+            };
+          case ADD_VALUE:
+            return {
+              ...state,
+              contador: state.contador + action.value,
+              clickCount: state.clickCount + 1,
+              clickValues: [...state.clickValues, state.contador],
+            };
+          case REMOVE_VALUE:
+            return {
+              ...state,
+              contador: state.contador - action.value,
+              clickCount: state.clickCount + 1,
+              clickValues: [...state.clickValues, state.contador],
+            };
+          default:
+            return state;
+        }
+      }
+
+      const store = Redux.createStore(
+        counterReducer,
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+      );
+
+      document.getElementById('increment')
+        .addEventListener('click', () => {
+        store.dispatch({ type: INCREMENT });
+      });
+
+      document.getElementById('decrement')
+        .addEventListener('click', () => {
+        store.dispatch( { type: DECREMENT });
+      });
+
+      document.getElementById('add')
+        .addEventListener('change', (event) => {
+          store.dispatch({
+            type: ADD_VALUE,
+            value: Number(event.target.value),
+          });
+        });
+      
+      document.getElementById('remove')
+        .addEventListener('change', (event) => {
+          store.dispatch({
+            type: REMOVE_VALUE,
+            value: Number(event.target.value),
+          });
+        });
+
+      store.subscribe(() => {
+        document.getElementById('value')
+          .innerText = store.getState().contador;
+        
+        document.getElementById('count')
+          .innerHTML = store.getState().clickCount;
+
+        document.getElementById('clickValues')
+          .innerHTML = store.getState().clickValues;
+      });
+    </script>
+  </body>
+</html>
