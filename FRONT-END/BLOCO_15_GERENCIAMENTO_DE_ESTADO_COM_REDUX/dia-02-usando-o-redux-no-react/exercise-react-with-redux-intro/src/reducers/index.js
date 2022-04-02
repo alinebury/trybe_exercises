@@ -1,18 +1,8 @@
-import { CHANGE_SIGNAL } from '../actions';
+import { combineReducers } from 'redux';
+import trafficSignalReducer from './trafficSignalReducer';
 
-const INITIAL_STATE = {
-  color: 'red',
-};
+const rootReducer = combineReducers({ 
+  signal: trafficSignalReducer,
+});
 
-const reducer = (state = INITIAL_STATE, action) => {
-  switch (action.type) {
-  case CHANGE_SIGNAL:
-    return {
-      color: action.payload,
-    };
-  default:
-    return state
-  }
-}
-
-export default reducer;
+export default rootReducer;

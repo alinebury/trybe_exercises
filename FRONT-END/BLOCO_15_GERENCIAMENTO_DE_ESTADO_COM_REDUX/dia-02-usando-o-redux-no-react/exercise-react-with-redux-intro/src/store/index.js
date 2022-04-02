@@ -1,9 +1,11 @@
 import { createStore } from 'redux';
-import reducer from  '../reducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import rootReducer from '../reducers';
+import trafficSignalReducer from '../reducers/trafficSignalReducer';
+
 
 const store = createStore(
-  reducer,
+  trafficSignalReducer,
   composeWithDevTools(),
 );
 
